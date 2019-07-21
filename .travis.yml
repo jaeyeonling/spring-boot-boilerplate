@@ -32,19 +32,20 @@ deploy:
     on:
       repo: Jaeyeonling/spring-boot-boilerplate
       branch: master
-  - provider: codedeploy
-    access_key_id: $AWS_ACCESS_KEY
-    secret_access_key: $AWS_SECRET_KEY
-    bucket: spring-boot-boilerplate-deploy
-    key: spring-boot-boilerplate.zip
-    bundle_type: zip
-    application: spring-boot-boilerplate
-    deployment_group: spring-boot-boilerplate-group
-    region: ap-northeast-2
-    wait-until-deployed: true
-    on:
-      repo: Jaeyeonling/spring-boot-boilerplate
-      branch: master
+#  - provider: codedeploy
+#    access_key_id: $AWS_ACCESS_KEY
+#    secret_access_key: $AWS_SECRET_KEY
+#    bucket: spring-boot-boilerplate-deploy
+#    key: spring-boot-boilerplate.zip
+#    bundle_type: zip
+#    application: spring-boot-boilerplate
+#    deployment_group: spring-boot-boilerplate-group
+#    region: ap-northeast-2
+#    wait-until-deployed: true
+#    on:
+#      repo: Jaeyeonling/spring-boot-boilerplate
+#      branch: master
+
 notifications:
   email:
     recipients:
